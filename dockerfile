@@ -2,7 +2,7 @@ FROM docker:latest
 
 MAINTAINER Dave Lemphers <dave@mycodepilot.com>
 
-RUN apk add --update py-pip jq git make openssh && rm -rf /var/cache/apk/*
+RUN apk add --update curl py-pip jq git make openssh && rm -rf /var/cache/apk/*
 
 RUN pip install awscli
 
